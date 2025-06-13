@@ -21,8 +21,9 @@ app.use(morgan('dev'));
 
 // CORS setup
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000'
+  origin: '*'
 }));
+
 
 // Request body parsing
 app.use(express.json({ limit: '1mb' }));
