@@ -1,0 +1,29 @@
+# Root
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Optional: ignore OS or editor-specific files
+*.swp
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+
+#########################
+# Server
+#########################
+
+/node_modules/
+/.env
+/.DS_Store
+/logs/
+/*.log
+/*.local
+/tmp/
+/.cache/
+/package-lock.json
+/yarn.lock
