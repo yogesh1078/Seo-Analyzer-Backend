@@ -30,6 +30,10 @@ app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.get('/api/', (req, res) => {
+  res.send('Default route is working!');
+});
+
 app.use('/api', seoRoutes);
 
 // Error handler
